@@ -80,6 +80,17 @@ public class SortTest {
 
     @Test
     public void QuickSortTest() {
+        /*
+        QuickSort qs = new QuickSort();
+        int[] result = qs.sort(sorted.clone());
+        assertTrue(check(result));
+
+        result = qs.sort(unsorted.clone());
+        assertTrue(check(result));
+
+        result = qs.sort(reversed.clone());
+        assertTrue(check(result));
+        */
     }
 
     @Test

@@ -1,12 +1,18 @@
 package com.jchen.project.list;
 
-public interface IList<T>{
+public interface IList<T> {
 
     public boolean add(T value);
 
-    public boolean remove(T value);
+    public boolean add(int idx, T value);
 
     public boolean addAll(T[] value);
+
+    public boolean addFirst(T value);
+
+    public boolean addLast(T value);
+
+    public boolean remove(T value);
 
     public void clear();
 
@@ -14,9 +20,11 @@ public interface IList<T>{
 
     public int size();
 
-    public T[] toArray(T[] value);
+    public T get(int idx);
 
-    public Node getFront();
+    public T getFront();
 
-    public Node getLast();
+    public T getLast();
+
+    public String toString();
 }
