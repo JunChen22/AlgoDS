@@ -2,7 +2,7 @@ package com.jchen.project.list;
 
 public class SinglyLinkedList<T> implements IList<T> {
 
-    public int size;
+    private int size;
     Node<T> head;
 
     //creates empty list

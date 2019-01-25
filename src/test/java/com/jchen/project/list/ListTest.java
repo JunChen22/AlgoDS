@@ -1,5 +1,3 @@
-//package com.jchen.project.list;
-
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -7,7 +5,8 @@ import org.junit.Test;
 
 import com.jchen.project.list.DoublyLinkedList;
 import com.jchen.project.list.SinglyLinkedList;
-
+import com.jchen.project.list.CycleDetection;
+import com.jchen.project.list.CircularLinkedList;
 
 public class ListTest {
 
@@ -83,5 +82,72 @@ public class ListTest {
         strList.clear();
         assertEquals(0, strList.size());
         assertNull(strList.getFront());
+    }
+
+    @Test
+    public void DoublyLinkedListTest() {
+
+        DoublyLinkedList<String> strList = new DoublyLinkedList<>();
+
+        boolean status = strList.addAll(strArr.clone());
+        assertTrue(status);
+
+        // add( int idx, T value);
+        strList.add(25, "middle");
+        assertEquals("middle", strList.get(26));
+
+        //addFirst(T value);
+        strList.addFirst("front");
+        assertEquals("front", strList.getFront());
+
+        //addLast(T value);
+        strList.addLast("last");
+        assertEquals("last", strList.getLast());
+
+        //size()
+        assertEquals(strArr.length + 3, strList.size());
+
+        //remove() , testing for non exist value
+        status = strList.remove("Non-exist str");
+        assertFalse(status);
+
+        //remove()
+        status = strList.remove("middle");
+        assertTrue(status);
+
+        //contains(T value);
+        assertTrue(strList.contains("front"));
+        assertFalse(strList.contains("middle"));
+
+        //toString();
+        strList.remove("front");
+        strList.remove("last");
+        String result = strList.toString();
+        assertEquals(ALPHABET, result);
+
+        //clear();
+        strList.clear();
+        assertEquals(0, strList.size());
+        assertNull(strList.getFront());
+    }
+
+    @Test
+    public void CircularLinkedListTest() {
+        CircularLinkedList<String> strList = new CircularLinkedList <>();
+
+
+    }
+
+    @Test
+    public void CycleDetectionTest() {
+        SinglyLinkedList<String> s = new SinglyLinkedList<>();
+        DoublyLinkedList<String> ls2 = new DoublyLinkedList<>();
+        CircularLinkedList<String> clist = new CircularLinkedList <>();
+
+        /*
+        assertFalse();
+        assertFalse();
+        assertTrue();
+        */
     }
 }
