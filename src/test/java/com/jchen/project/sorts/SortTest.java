@@ -93,12 +93,41 @@ public class SortTest {
         */
     }
 
+
     @Test
     public void RadixSortTest() {
     }
 
     @Test
     public void MergeSortTest() {
+
+        MergeSort ms = new MergeSort();
+
+        //recursive merge sort
+        int[] arr  = sorted.clone();
+        ms.sort(arr,0,arr.length-1);
+        assertTrue(check(arr));
+
+        arr  = unsorted.clone();
+        ms.sort(arr,0,arr.length-1);
+        assertTrue(check(arr));
+
+        arr = reversed.clone();
+        ms.sort(arr,0,arr.length-1);
+        assertTrue(check(arr));
+
+
+        /*
+        //iterative merge sort
+        arr = ms.sort(sorted.clone());
+        assertTrue(check(arr));
+
+        arr = ms.sort(unsorted.clone());
+        assertTrue(check(arr));
+
+        arr = ms.sort(reversed.clone());
+        assertTrue(check(arr));
+        */
     }
 
     public boolean check(int[] arr){

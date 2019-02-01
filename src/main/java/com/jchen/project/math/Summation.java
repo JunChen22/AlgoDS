@@ -4,11 +4,15 @@ public class Summation {
     public Summation() {
     }
 
+    //The Story of Gauss
+    // sum = n(n+1)/2
     public int sum(int tar){
-        return -1;
+
+        return (tar*(tar+1))/2;
     }
 
     public int sum(int left,int right){
         return -1;
     }
+
 }
