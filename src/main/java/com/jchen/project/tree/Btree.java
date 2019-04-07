@@ -41,18 +41,18 @@ public class Btree<T> {
     public Btree() {
 
     }
-
+    /*
     //create a binary tree from a array
     public T makeTree(T[] arr) {
 
-        Node nd = new Node();
-        if (arr.length == 0)
-            for (T item : arr {
+        Node<T> nd = new Node<T>();
+        if (arr.length == 0){
+            for (T item : arr) {
 
             }
         }
     }
-
+    */
     public boolean add() {
 
         return false;

@@ -14,7 +14,6 @@ public class MathTest {
     @Before
     public void setUp(){
         for(int num: primeNumbers){
-            System.out.println(num);
         }
     }
 

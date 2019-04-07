@@ -78,9 +78,10 @@ public class SortTest {
         assertTrue(check(result));
     }
 
+    /*
     @Test
     public void QuickSortTest() {
-        /*
+
         QuickSort qs = new QuickSort();
         int[] result = qs.sort(sorted.clone());
         assertTrue(check(result));
@@ -90,12 +91,41 @@ public class SortTest {
 
         result = qs.sort(reversed.clone());
         assertTrue(check(result));
-        */
+
     }
 
+    @Test
+    public void CountingSort() {
+
+        CountingSort cs = new CountingSort();
+
+    }
+    */
 
     @Test
     public void RadixSortTest() {
+    }
+
+    @Test
+    public void HeapSortTest() {
+
+        HeapSort hs = new HeapSort();
+        int[] arr  = sorted.clone();
+
+
+        //sorts a sorted array
+        int[] newArr = hs.sort(arr);
+        assertTrue(check(arr));
+
+        //sorts a unsorted array
+        arr  = unsorted.clone();
+        newArr = hs.sort(arr);
+        assertTrue(check(newArr));
+
+        //sorts a reversed array
+        arr = reversed.clone();
+        newArr =  hs.sort(arr);
+        assertTrue(check(newArr));
     }
 
     @Test
@@ -115,25 +145,11 @@ public class SortTest {
         arr = reversed.clone();
         ms.sort(arr,0,arr.length-1);
         assertTrue(check(arr));
-
-
-        /*
-        //iterative merge sort
-        arr = ms.sort(sorted.clone());
-        assertTrue(check(arr));
-
-        arr = ms.sort(unsorted.clone());
-        assertTrue(check(arr));
-
-        arr = ms.sort(reversed.clone());
-        assertTrue(check(arr));
-        */
     }
 
     public boolean check(int[] arr){
         for(int i = 0;i<arr.length-1;i++){
             if(arr[i]>arr[i+1]){
-                System.out.println(arr[i]+" " + arr[i+1]);
                 return false;
             }
         }

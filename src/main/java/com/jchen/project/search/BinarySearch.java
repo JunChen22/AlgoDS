@@ -14,7 +14,7 @@ public class BinarySearch {
 
         while (left <= right) {
 
-            int mid = left + (right - left) / 2;
+            int mid = (right + left) / 2;
 
             //test if found
             if (target == arr[mid]) return mid;

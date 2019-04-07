@@ -92,11 +92,4 @@ public class MergeSort {
             k++;
         }
     }
-
-
-    //iterative
-    public void sort(int[] arr) {
-
-    }
-
 }
