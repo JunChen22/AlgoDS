@@ -145,7 +145,7 @@ public class DoublyLinkedList<T> implements IList<T> {
 
         //find it then remove it
         //return true;
-        if(head.val == value){
+        if (head.val == value) {
             head = head.next;
             size--;
             return true;
@@ -169,7 +169,7 @@ public class DoublyLinkedList<T> implements IList<T> {
     @Override
     public void clear() {
         //need to set everything to null
-        while(head!=null){
+        while (head != null) {
             Node curr = head.next;
             head = null;
             head = curr;

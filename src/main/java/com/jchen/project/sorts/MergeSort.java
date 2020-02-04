@@ -28,8 +28,6 @@ public class MergeSort {
     public void sort(int[] arr, int left, int right) {
 
         //divide and conquer
-        //
-        //
         //divide the arr to half
         //divide first half till it's only
         if (left < right) {
@@ -45,7 +43,6 @@ public class MergeSort {
             //combine the two half
             merge(arr, left, mid, right);
         }
-
     }
 
     public void merge(int[] arr, int left, int mid, int right) {
@@ -65,10 +62,10 @@ public class MergeSort {
 
         int k = left;
         while (i < lenLeft && j < lenRight) {
-            if(leftArr[i]<= rightArr[j]){
+            if (leftArr[i] <= rightArr[j]) {
                 arr[k] = leftArr[i];
                 i++;
-            }else{
+            } else {
                 arr[k] = rightArr[j];
                 j++;
             }
@@ -77,16 +74,13 @@ public class MergeSort {
 
         //then append the not finish iterated
         //to the finished one
-
-        while (i < lenLeft)
-        {
+        while (i < lenLeft) {
             arr[k] = leftArr[i];
             i++;
             k++;
         }
 
-        while (j < lenRight)
-        {
+        while (j < lenRight) {
             arr[k] = rightArr[j];
             j++;
             k++;

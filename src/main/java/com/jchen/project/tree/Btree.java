@@ -41,6 +41,7 @@ public class Btree<T> {
     public Btree() {
 
     }
+
     /*
     //create a binary tree from a array
     public T makeTree(T[] arr) {

@@ -133,7 +133,7 @@ public class ListTest {
 
     @Test
     public void CircularLinkedListTest() {
-        CircularLinkedList<String> strList = new CircularLinkedList <>();
+        CircularLinkedList<String> strList = new CircularLinkedList<>();
 
 
     }
@@ -142,7 +142,7 @@ public class ListTest {
     public void CycleDetectionTest() {
         SinglyLinkedList<String> s = new SinglyLinkedList<>();
         DoublyLinkedList<String> ls2 = new DoublyLinkedList<>();
-        CircularLinkedList<String> clist = new CircularLinkedList <>();
+        CircularLinkedList<String> clist = new CircularLinkedList<>();
 
         /*
         assertFalse();

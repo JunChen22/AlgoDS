@@ -110,7 +110,7 @@ public class SortTest {
     public void HeapSortTest() {
 
         HeapSort hs = new HeapSort();
-        int[] arr  = sorted.clone();
+        int[] arr = sorted.clone();
 
 
         //sorts a sorted array
@@ -118,13 +118,13 @@ public class SortTest {
         assertTrue(check(arr));
 
         //sorts a unsorted array
-        arr  = unsorted.clone();
+        arr = unsorted.clone();
         newArr = hs.sort(arr);
         assertTrue(check(newArr));
 
         //sorts a reversed array
         arr = reversed.clone();
-        newArr =  hs.sort(arr);
+        newArr = hs.sort(arr);
         assertTrue(check(newArr));
     }
 
@@ -134,26 +134,26 @@ public class SortTest {
         MergeSort ms = new MergeSort();
 
         //recursive merge sort
-        int[] arr  = sorted.clone();
-        ms.sort(arr,0,arr.length-1);
+        int[] arr = sorted.clone();
+        ms.sort(arr, 0, arr.length - 1);
         assertTrue(check(arr));
 
-        arr  = unsorted.clone();
-        ms.sort(arr,0,arr.length-1);
+        arr = unsorted.clone();
+        ms.sort(arr, 0, arr.length - 1);
         assertTrue(check(arr));
 
         arr = reversed.clone();
-        ms.sort(arr,0,arr.length-1);
+        ms.sort(arr, 0, arr.length - 1);
         assertTrue(check(arr));
     }
 
-    public boolean check(int[] arr){
-        for(int i = 0;i<arr.length-1;i++){
-            if(arr[i]>arr[i+1]){
+    public boolean check(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
                 return false;
             }
         }
-        return  true;
+        return true;
     }
 
 }

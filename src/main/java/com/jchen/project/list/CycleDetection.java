@@ -20,7 +20,7 @@ public class CycleDetection {
         Node slow = nd;
         Node fast = nd;
 
-        while (fast!=null && fast.next!= null && slow != null) {
+        while (fast != null && fast.next != null && slow != null) {
             fast = fast.next.next;
             slow = slow.next;
             if (fast == slow) {

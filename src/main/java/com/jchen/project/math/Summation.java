@@ -6,12 +6,12 @@ public class Summation {
 
     //The Story of Gauss
     // sum = n(n+1)/2
-    public int sum(int tar){
+    public int sum(int tar) {
 
-        return (tar*(tar+1))/2;
+        return (tar * (tar + 1)) / 2;
     }
 
-    public int sum(int left,int right){
+    public int sum(int left, int right) {
         return -1;
     }
 

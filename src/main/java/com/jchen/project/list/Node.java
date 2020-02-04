@@ -6,7 +6,7 @@ public class Node<T> {
     Node next;
     Node prev;
 
-    Node(T x ) {
+    Node(T x) {
         val = x;
         next = null;
         prev = null;

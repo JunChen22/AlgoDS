@@ -5,19 +5,19 @@ public class Factorial {
     }
 
     //recursive factorial
-    public int recurFactorial(int tar){
+    public int recurFactorial(int tar) {
 
-        if(tar == 0)return 1;
-        return tar * recurFactorial(tar -1);
+        if (tar == 0) return 1;
+        return tar * recurFactorial(tar - 1);
     }
 
     //iterative factorial
-    public int iterFactorial(int tar){
+    public int iterFactorial(int tar) {
 
-        if(tar ==0)return 1;
+        if (tar == 0) return 1;
 
-        for(int i = tar ; tar > 0 ;i--){
-            tar *=i;
+        for (int i = tar; tar > 0; i--) {
+            tar *= i;
         }
 
         return tar;
