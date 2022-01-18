@@ -29,4 +29,8 @@ public class BinarySearch {
         //return -1 for not found
         return -1;
     }
+
+    public int peak(){
+        return 0;
+    }
 }
