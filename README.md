@@ -1,4 +1,6 @@
 # AlgoDS
 
-[![Build Status](https://travis-ci.com/JunChen22/AlgoDS.svg?token=DFxNF8mBJUsrGCpaLpSh&branch=master)](
-https://travis-ci.com/JunChen22/AlgoDS)
+[![Java CI with Maven](https://github.com/JunChen22/AlgoDS/actions/workflows/maven.yml/badge.svg)](https://github.com/JunChen22/AlgoDS/actions/workflows/maven.yml)
+
+
+Algorithm and data structure in java.
