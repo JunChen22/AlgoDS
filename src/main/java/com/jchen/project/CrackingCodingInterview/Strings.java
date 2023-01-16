@@ -1,4 +1,4 @@
-package com.jchen.project.CrackingCodingInterview.ArraysAndStrings;
+package com.jchen.project.CrackingCodingInterview;
 
 import java.util.Arrays;
 
@@ -112,5 +112,65 @@ public class Strings {
      */
     public boolean isPermutationOfPalindrome2(String phrase) {
 
+    }
+
+    public boolean isPermutationOfPalindrome3(String phrase) {
+
+    }
+
+
+    /*
+        edit distance/ one edit away from second string
+     */
+    public boolean oneAway(String str, String target) {
+
+        if (str.length() == target.length()) {           // same length check if one edit away
+            oneEditReplace(str, target);
+        } else if (str.length() + 1 == target.length()) {   // check if one insert edit away
+            oneEditInsert(str, target);
+        } else if (str.length() == target.length() + 1) {
+            oneEditInsert(target, str);
+        }
+        return false;
+    }
+
+    public boolean oneEditReplace(String s1, String s2) {
+        return true;
+    }
+
+    public boolean oneEditInsert(String s1, String s2) {
+        return true;
+    }
+
+
+    /*
+
+     */
+    public boolean oneEditAway(String first, String second) {
+        return true;
+    }
+
+
+
+    public String compress(String str) {
+        return "";
+    }
+
+
+    public boolean rotate(int[][] matrix) {
+        return true;
+    }
+
+
+    public void zeroMatrix(int[][] matrix) {
+
+    }
+
+
+    /*
+
+     */
+    public boolean isRotation(String s1, String s2) {
+        return true;
     }
 }

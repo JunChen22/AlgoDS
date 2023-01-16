@@ -1,4 +1,4 @@
-package com.jchen.project.CrackingCodingInterview.LinkedList;
+package com.jchen.project.CrackingCodingInterview;
 
 import java.util.HashSet;
 import java.util.Set;
