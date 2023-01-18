@@ -75,4 +75,30 @@ public class SortingAndSearching {
     public void checkDuplicates(int[] array) {
 
     }
+
+
+
+
+
+
+
+
+
+
+
+    /*
+        In an array of integers, a "peak" is an element which is greater than or equal to the adjacent integer and a "valley"
+        is an element which is less than or equal to the adjacent integer.
+        E.g.
+            [5,8,6,2,3,4,6]
+         so lowest point and highest point.
+
+
+
+     */
+
+
+    public void peaksAndValleys(int[] array) {
+
+    }
 }

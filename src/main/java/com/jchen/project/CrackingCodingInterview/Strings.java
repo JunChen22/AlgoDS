@@ -104,18 +104,18 @@ public class Strings {
 
      */
     public boolean isPermutationOfPalindrome(String phrase) {
-
+        return true;
     }
 
     /*
 
      */
     public boolean isPermutationOfPalindrome2(String phrase) {
-
+        return true;
     }
 
     public boolean isPermutationOfPalindrome3(String phrase) {
-
+        return true;
     }
 
 

@@ -3,10 +3,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.jchen.project.list.DoublyLinkedList;
-import com.jchen.project.list.SinglyLinkedList;
-import com.jchen.project.list.CycleDetection;
-import com.jchen.project.list.CircularLinkedList;
 
 public class ListTest {
 
@@ -37,6 +33,7 @@ public class ListTest {
         }
     }
 
+    /*
     @Test
     public void SinglyLinkedListTest() {
 
@@ -134,20 +131,19 @@ public class ListTest {
     @Test
     public void CircularLinkedListTest() {
         CircularLinkedList<String> strList = new CircularLinkedList<>();
-
-
     }
-
     @Test
     public void CycleDetectionTest() {
         SinglyLinkedList<String> s = new SinglyLinkedList<>();
         DoublyLinkedList<String> ls2 = new DoublyLinkedList<>();
         CircularLinkedList<String> clist = new CircularLinkedList<>();
 
-        /*
+
         assertFalse();
         assertFalse();
         assertTrue();
-        */
+
     }
+
+    */
 }

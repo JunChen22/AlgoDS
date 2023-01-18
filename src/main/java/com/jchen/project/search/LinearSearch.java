@@ -1,10 +1,9 @@
 package com.jchen.project.search;
 
+/*
+    finds the target in a list by searching all the elements.
+ */
 public class LinearSearch {
-
-
-    public LinearSearch() {
-    }
 
     //if found return idx
     //if not found return -1

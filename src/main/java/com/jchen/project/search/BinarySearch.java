@@ -2,9 +2,6 @@ package com.jchen.project.search;
 
 public class BinarySearch {
 
-    public BinarySearch() {
-    }
-
     //return idx
 
     public int search(int[] arr, int target) {
@@ -30,6 +27,9 @@ public class BinarySearch {
         return -1;
     }
 
+    /*
+        finds peak when the array is rotated
+     */
     public int peak(){
         return 0;
     }
