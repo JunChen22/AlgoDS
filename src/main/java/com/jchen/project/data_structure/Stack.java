@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public interface Stack<T> extends IStack<T> {
 
-    // implement with queue
+    // implement with queue TODO:
     public static class QueueStack<T> implements Stack<T> {
         @Override
         public boolean push(T value) {

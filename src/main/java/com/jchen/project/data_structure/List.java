@@ -4,6 +4,7 @@ import com.jchen.project.data_structure.interfaces.IList;
 
 public interface List<T> extends IList<T> {
 
+    // TODO:
     public static class ArrayList<T> implements List<T> {
 
         private static final int MINIMUM_SIZE = 1024;
