@@ -2,6 +2,13 @@ package com.jchen.project.CrackingCodingInterview;
 
 public class TreesAndGraphs {
 
+    /*
+
+     */
+    public boolean RouteBetweenNodes() {
+        return false;
+    }
+
     public void BSTSequences() {
 
     }
@@ -29,9 +36,7 @@ public class TreesAndGraphs {
     public void RandomNode() {
 
     }
-    public void RouteBetweenNodes() {
 
-    }
     public void Sucessor() {
 
     }
