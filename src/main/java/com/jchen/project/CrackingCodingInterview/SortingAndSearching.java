@@ -142,9 +142,6 @@ public class SortingAndSearching {
         return -1;
     }
 
-
-
-
     public static class Listy {
 
     }
